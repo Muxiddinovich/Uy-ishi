@@ -16,7 +16,7 @@ def json_oqish(fayl):
 class Shaxs(ABC):
     def __init__(self, ism, telefon, email):
         self.ism = ism
-        self.__telefon = telefon  # Encapsulation (qadoqlash)
+        self.__telefon = telefon  
         self.__email = email
 
     def get_telefon(self):
@@ -58,13 +58,12 @@ class Mahsulot:
 
 
 class Buyurtma:
-    def __init__(self, mijoz_id, mahsulot, soni):
-        self.mijoz_id = mijoz_id
+    def __init__(self, mahsulot, soni):
         self.mahsulot = mahsulot
         self.soni = soni
 
     def malumot(self):
-        return {"Mijoz ID": self.mijoz_id, "Mahsulot": self.mahsulot.nomi, "Soni": self.soni, "Jami": self.mahsulot.narxi * self.soni}
+        return {"Mahsulot": self.mahsulot.nomi, "Soni": self.soni, "Jami": self.mahsulot.narxi * self.soni}
 
 
 class Tolov(ABC):

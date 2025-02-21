@@ -10,5 +10,11 @@
         "telefon": "l",
         "email": "l",
         "mijoz_id": "l"
+    },
+    {
+        "Ism": "Olma",
+        "Telefon": "10",
+        "Email": "aakka",
+        "ID": "10"
     }
 ]
